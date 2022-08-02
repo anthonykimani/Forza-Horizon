@@ -1,4 +1,5 @@
 import HomeText from "./HomeText";
+import LatestNews from "./LatestNews";
 
 const Background = () => {
   return (
@@ -8,7 +9,7 @@ const Background = () => {
         loop="loop"
         muted="muted"
         playsInline
-        className="absolute top-0 left-0 z-0 h-full w-full object-cover object-center"
+        className="absolute top-0 left-0 z-0 h-[55rem] w-full object-cover object-center"
       >
         <source
           src={
@@ -18,6 +19,7 @@ const Background = () => {
         />
       </video>
       <HomeText />
+      <LatestNews />
     </>
   );
 };
